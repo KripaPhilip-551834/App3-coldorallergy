@@ -49,7 +49,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1;
         }
-
+<script>// This function uses math and proportions to help answer with the yes or no questions whether a person has allergies or a cold.</script>
+	function results(){
+		var percentAllergy= (allergy_count/6)*100;
+		var percentCold= (cold_count/6)*100
+		var result= document.getElementById("seven");
+		result.innerHTML = "Probability it's allergies =" + percentAllergy +"<br> Probability it's a cold=" +percentCold;
+	}
   </script>
 
 
