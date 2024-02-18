@@ -53,7 +53,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function results(){
 		var percentAllergy= (allergy_count/6)*100;
 		var percentCold= (cold_count/6)*100
-		var result= document.getElementById("seven");
+		var result= document.getElementById("six");
 		result.innerHTML = "Probability it's allergies =" + percentAllergy +"<br> Probability it's a cold=" +percentCold;
 	}
   </script>
@@ -150,8 +150,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </footer>
 <script>// This creates the footer of the app as "DIY!"</script>
 
-<p id="results">innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;</p>
-var resultText = document.getElementById("results");
+<div class= "page" id="six">
+	<div id="header" class= "w3-container w3-flat-carrot">
+		<h1>End of Questionnaire</h1>
+	</div>
+	<div id= "content" class= "w3-container">
+		<button class="w3-btn w3-indigo" onclick="results();"> Results </button>
+		<p id="results"></p>
+	</div>
+</div>
 <script>//Creating the results page by changing the html</script>
 
 </body>
