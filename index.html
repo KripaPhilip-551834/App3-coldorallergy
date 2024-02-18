@@ -47,12 +47,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
         function coldAdd(){
             cold_count = cold_count + 1;
+		//alert(allergy_count); attempt to remove the error box
+
         }
 
 	function results(){
-	}
-		var percentAllergy= (allergy_count/6)*100;
-		var percentCold= (cold_count/6)*100
+		var percentAllergy= (allergy_count/6)*100; //calculations for allergy "yes"
+		var percentCold= (cold_count/6)*100; //calculations for cold "yes"
 		var result= document.getElementById("six");
 		result.innerHTML = "Probability it's allergies =" + percentAllergy +"<br> Probability it's a cold=" +percentCold;
 	}
